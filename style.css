@@ -1,0 +1,292 @@
+/* variables */
+:root{
+  --title-color: #EAC531;
+  --night-color: #1A2B42;
+  --light-color: #FDFFFF;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background-color: var(--night-color);
+  position: relative;
+}
+
+/* NAV */
+nav img{
+  height: 80px;
+}
+nav ul{
+  text-align: center;
+}
+.navbar-collapse{
+  flex-grow: 0;
+}
+#navbarSupportedContent{
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.nav-item{
+  margin: 0 8px;
+}
+.nav-link{
+  color: black!important;
+}
+.nav-link:hover{
+  color: var(--title-color)!important;
+}
+.navbar-nav .nav-link.active{
+  color: var(--title-color)!important;
+}
+
+/* header */
+/* header{
+  background: url("images/Cinema-en-plein-air-Parc-Monseau.jpg");
+  background-size: cover;
+  height: 100vh;
+} */
+.imagePresentation {
+  height: 80vh;
+  width: 100%;
+  background: url("images/Cinema-en-plein-air-Parc-Monseau.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.parent{
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+.text-intro{
+  /* padding-top: 300px;
+  padding-bottom: 148px; */
+  /* padding-top: 130vh;
+  padding-bottom: 80vh; */
+  /* transform: translateY(-50%);
+  font-size: 1.5rem;
+  background: rgba(20,20,20,.7);
+  color: var(--title-color);
+  position: absolute;
+  z-index: 2; */
+  transform: translateY(-50%);
+    font-size: 1.5rem;
+    background: rgba(20,20,20,.7);
+    color: var(--title-color);
+    position: absolute;
+    z-index: 2;
+    padding-top: 117vh;
+    padding-bottom: 19vh;
+    width: 100%;
+}
+.preTxt{
+  font-size: 1.5rem;
+}
+.text-intro a{
+  color: white;
+  background-color: var(--title-color);
+  font-size: 1.3rem;
+}
+h1{
+  font-size: 2.3rem;
+}
+
+/* Presentation  */
+.presentation{
+  font-size: 1.4rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 5rem auto;
+  padding: 10px;
+  max-width: 900px;
+  background-color: var(--light-color);
+  color: var(--title-color);
+  box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.7);
+}
+
+#programmation h2{
+  color: white;
+    text-align: center;
+    margin: 4rem 0 2rem;
+    font-size: 2.7rem;
+}
+.date-title{
+  color: white;
+    font-size: 2.2rem;
+    font-style: italic;
+    text-align: center;
+    margin: 3rem 0;
+}
+.card{
+  width: 15rem;
+  margin-bottom: 2rem;
+  height: 350px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px 0 rgba(218, 240, 98, 0.7);
+}
+.card:hover{
+  transform: scale(1.05);
+}
+.card-img-top{
+  height: 200px;
+}
+.card-text{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.col{
+  margin-bottom: 3rem;
+}
+
+/* FOOTER  */
+footer h5{
+  margin-bottom: 1rem;
+}
+footer a{
+  color: black;
+}
+footer a:hover{
+  text-decoration: none;
+  color: black;
+}
+.list-unstyled li p{
+  margin-bottom: 0;
+}
+.fb-ic, .tw-ic{
+  font-size: 1.5rem;
+}
+.fb-ic:hover, .tw-ic:hover{
+  color: var(--title-color);
+}
+
+
+.footer-copyright{
+  background-color: var(--night-color);
+  color: var(--light-color);
+}
+.footer-copyright a{
+  color: var(--light-color);
+}
+
+
+
+/* PAGE ACTUALITES  */
+.card-actu{
+  height: auto;
+}
+
+
+/* PAGE RESERVATION  */
+
+#reservation h2{
+  color: white;
+    text-align: center;
+    margin: 4rem 0 2rem;
+    font-size: 2.7rem;
+}
+.formulaire{
+  display: flex;
+    justify-content: center;
+    max-width: 650px;
+    flex-wrap: wrap;
+    margin: 0 auto 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 20px 0 rgba(218, 240, 98, 0.7);
+}
+.formulaire label{
+  width: 100%;
+  margin: 1rem 0;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+.formulaire input{
+  width: 95%;
+  height: 35px;
+  padding-left: 5px;
+}
+.seance-select{
+  width: 45%;
+}
+.message{
+  width: 95%;
+  margin: 1rem auto;
+}
+textarea{
+  height: 140px;
+  width: 100%;
+  padding-left: 5px;
+}
+button.submit{
+  display: block;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+button.submit:hover{
+  transform: scale(1.02);
+  color: var(--night-color);
+  background-color: var(--title-color);
+}
+
+
+/* PAGE CONTACT  */
+#contact h2{
+  color: white;
+    text-align: center;
+    margin: 4rem 0 2rem;
+    font-size: 2.7rem;
+}
+
+iframe{
+    display: block;
+    max-width: 650px;
+    margin: 0 auto 5rem;
+    width: 100%;
+}
+
+
+
+
+/* MEDIA QUERIES  */
+@media screen and (max-width:1200px){
+  .text-intro{
+    padding-bottom: 24vh;
+  }
+}
+
+@media screen and (max-width:568px){
+  .text-intro{
+    padding-bottom: 20vh;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .card{
+    margin: 0 auto 2rem;
+  }
+}
+
+@media screen and (max-width:476px) {
+  .text-intro{
+    padding-bottom: 16vh;
+  }
+}
+@media screen and (max-width:351px) {
+  .text-intro{
+    padding-bottom: 11vh;
+  } 
+}
