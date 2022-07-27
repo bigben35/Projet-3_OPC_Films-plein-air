@@ -10,7 +10,7 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Les Films de Plein Air - Page de réservation</title>
+    <title>Les Films de Plein Air - Page d'accueil</title>
 </head>
 
 <!-- BODY  -->
@@ -33,7 +33,7 @@
                         <a class="nav-link" href="index.html">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#programmation">Programmation</a>
+                        <a class="nav-link" href="#programmation">Programmation</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="actualites.html">Actualités</a>
@@ -60,48 +60,23 @@
         <div class="imagePresentation"></div>
     </header>
 
+
     <main>
-        <section id="reservation">
+        <section class="section-affiche">
             <div class="container">
-                <h2>Réservation</h2>
-                <form class="formulaire">
-                    <label for="name">
-                        <input id="name" type="text" placeholder="Nom" required />
-                    </label>
-                    <label for="firstName">
-                        <input id="firstName" type="text" placeholder="Prénom" required />
-                    </label>
-                    <label for="email">
-                        <input id="email" type="email" placeholder="E-mail" required />
-                    </label>
-                    <label class="seance-label" for="seance">Choix de la séance :
-                        <select class="seance-select" required>
-                            <option value="">-- Choisissez votre séance --</option>
-                            <option value="">5 août Le Corniaud</option>
-                            <option value="">5 août Le Parrain</option>
-                            <option value="">5 août Mean Streets</option>
-                            <option value="">6 août Le Corniaud</option>
-                            <option value="">6 août Le Parrain</option>
-                            <option value="">6 août Mean Streets</option>
-                            <option value="">7 août Le Corniaud</option>
-                            <option value="">7 août Le Parrain</option>
-                            <option value="">7 août Mean Streets</option>
-                            <option value="">8 août Le Corniaud</option>
-                            <option value="">8 août Le Parrain</option>
-                            <option value="">8 août Mean Streets</option>
-                        </select>
-                    </label>
-                    <div class="message">
-                        <textarea placeholder="Votre message ..."></textarea>
-                        <button class="submit">Envoyer</button>
+                <div class="row first-day text-center">
+                    <div class="col main-affiche">
+                      <!-- <div class="card" style="width: 18rem;"> -->
+                        <img class="card-img-main" src="images/corniaud.jpg" alt="affiche corniaud">
+                        <div class="card-body-affiche">
+                          <h3>Le Corniaud</h3>
+                          <p class="card-text">G.Oury - 1964 <br>18h</p>
+                        </div>
+                      </div>
                     </div>
-
-                </form>
-
             </div>
         </section>
     </main>
-
 
 
     <!-- Footer -->
