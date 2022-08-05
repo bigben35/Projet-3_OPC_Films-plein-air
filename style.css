@@ -281,6 +281,11 @@ iframe{
 }
 
 /* MEDIA QUERIES  */
+@media screen and (min-width:1200px){
+  .text-intro{
+    padding-bottom: 21vh;
+  }
+}
 @media screen and (min-width:768px){
   .text-intro{
     padding-bottom: 23vh;
@@ -289,7 +294,7 @@ iframe{
 
 @media screen and (max-width:767px){
   .text-intro{
-    padding-bottom: 20vh;
+    padding-bottom: 24vh;
   }
   
   .card{
@@ -300,11 +305,11 @@ iframe{
 
 @media screen and (max-width:476px) {
   .text-intro{
-    padding-bottom: 16vh;
+    padding-bottom: 14vh;
   }
 }
-@media screen and (max-width:351px) {
+@media screen and (max-width:360px) {
   .text-intro{
-    padding-bottom: 11vh;
+    padding-bottom: 6vh;
   } 
 }
