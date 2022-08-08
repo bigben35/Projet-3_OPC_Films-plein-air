@@ -288,24 +288,28 @@ iframe{
 }
 @media screen and (min-width:768px){
   .text-intro{
-    padding-bottom: 23vh;
+    padding-bottom: 20vh;
   }
 }
 
 @media screen and (max-width:767px){
   .text-intro{
-    padding-bottom: 24vh;
+    padding-bottom: 20vh;
   }
   
   .card{
     margin: 0 auto 2rem;
   }
 }
-
+@media screen and (max-width:567px) {
+  .text-intro{
+    padding-bottom: 15vh;
+  }
+}
 
 @media screen and (max-width:476px) {
   .text-intro{
-    padding-bottom: 14vh;
+    padding-bottom: 10vh;
   }
 }
 @media screen and (max-width:360px) {
