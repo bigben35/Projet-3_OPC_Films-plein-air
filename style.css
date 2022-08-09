@@ -314,6 +314,6 @@ iframe{
 }
 @media screen and (max-width:360px) {
   .text-intro{
-    padding-bottom: 6vh;
+    padding-bottom: 5vh;
   } 
 }
